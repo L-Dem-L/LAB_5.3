@@ -22,7 +22,7 @@ int main()
 double t(const double x)
 {
 	if (abs(x) >= 1)
-		return (cos(x) + 1) / exp(x) + pow(sin(x),2);
+		return (cos(x) + 1) / (exp(x) + pow(sin(x),2));
 	else
 	{
 		double S = 0;
@@ -32,7 +32,7 @@ double t(const double x)
 		do
 		{
 			j++;
-			double R = (-(x*x)/4*(j*j)+2*j);
+			double R = -(x*x)/(4*(j*j)+2*j);
 			a *= R;
 			S += a;
 		} while (j < 5);

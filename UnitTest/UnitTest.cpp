@@ -13,7 +13,7 @@ namespace UnitTest
 		TEST_METHOD(TestMethod1)
 		{
 			double x = 2.0;
-			double expected = (cos(x) + 1) / exp(x) + pow(sin(x), 2);
+			double expected = (cos(x) + 1) / (exp(x) + pow(sin(x), 2));
 
 			double actual = t(x);
 
